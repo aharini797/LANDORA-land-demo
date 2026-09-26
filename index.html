@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LANDORA Properties | Find Your Perfect Land</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOADER ================= -->
+    <div class="loader" id="loader">
+        <div class="loader-box">
+            <div class="loader-logo">LANDORA</div>
+            <div class="loader-line"></div>
+            <p>Finding Your Perfect Land...</p>
+        </div>
+    </div>
+
+
+    <!-- ================= BACKGROUND ================= -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">L</span>
+            <span>
+                <strong>LANDORA</strong>
+                <small>PROPERTIES</small>
+            </span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#about">About</a>
+            <a href="#locations">Locations</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <!-- ================= SIDE MENU ================= -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <aside class="side-menu" id="sideMenu">
+
+        <div class="side-menu-top">
+            <div class="side-logo">
+                <span class="logo-mark">L</span>
+                <div>
+                    <strong>LANDORA</strong>
+                    <small>PROPERTIES</small>
+                </div>
+            </div>
+
+            <button class="close-menu" id="closeMenu">&times;</button>
+        </div>
+
+        <div class="side-links">
+
+            <a href="#home">🏠 Home</a>
+            <a href="#properties">🏡 Properties</a>
+            <a href="#residential">🏘️ Residential Plots</a>
+            <a href="#farmland">🌳 Farm Lands</a>
+            <a href="#premium">💎 Premium Lands</a>
+            <a href="#about">📖 About Us</a>
+            <a href="#locations">📍 Locations</a>
+            <a href="#gallery">🖼️ Gallery</a>
+            <a href="#process">📋 How It Works</a>
+            <a href="#reviews">⭐ Reviews</a>
+            <a href="#contact">📞 Contact</a>
+
+        </div>
+
+        <a href="#contact" class="side-cta">
+            Enquire Now
+        </a>
+
+    </aside>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content reveal">
+
+                <span class="eyebrow">
+                    ✦ TRUSTED LAND & PROPERTY SOLUTIONS
+                </span>
+
+                <h1>
+                    Find Land.<br>
+                    <span>Build Your Future.</span>
+                </h1>
+
+                <p>
+                    Discover beautiful residential plots, farm lands and
+                    premium properties in locations that help your future grow.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn btn-primary">
+                        Explore Properties
+                        <span>→</span>
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Talk to Us
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>500+</strong>
+                        <span>Properties</span>
+                    </div>
+
+                    <div>
+                        <strong>20+</strong>
+                        <span>Locations</span>
+                    </div>
+
+                    <div>
+                        <strong>1000+</strong>
+                        <span>Happy Clients</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image reveal">
+
+                <div class="hero-image-frame">
+                    <img
+                        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85"
+                        alt="Beautiful green land"
+                    >
+                </div>
+
+                <div class="floating-card floating-card-one">
+                    <span class="floating-icon">📍</span>
+                    <div>
+                        <strong>Prime Locations</strong>
+                        <small>Carefully selected</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-two">
+                    <span>✓</span>
+                    <div>
+                        <strong>Verified</strong>
+                        <small>Properties</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+        <section class="search-section">
+
+            <div class="search-box reveal">
+
+                <div class="search-title">
+                    <span>🔎</span>
+                    <div>
+                        <strong>Find Your Property</strong>
+                        <small>Search from our available lands</small>
+                    </div>
+                </div>
+
+                <div class="search-fields">
+
+                    <div class="search-field">
+                        <label>Location</label>
+                        <select id="locationFilter">
+                            <option value="all">All Locations</option>
+                            <option value="Dindigul">Dindigul</option>
+                            <option value="Madurai">Madurai</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Trichy">Trichy</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label>Property Type</label>
+                        <select id="typeFilter">
+                            <option value="all">All Types</option>
+                            <option value="Residential">Residential</option>
+                            <option value="Farm Land">Farm Land</option>
+                            <option value="Premium">Premium</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label>Budget</label>
+                        <select id="budgetFilter">
+                            <option value="all">Any Budget</option>
+                            <option value="low">Below ₹25 Lakhs</option>
+                            <option value="medium">₹25L - ₹50L</option>
+                            <option value="high">Above ₹50 Lakhs</option>
+                        </select>
+                    </div>
+
+                    <button class="search-button" id="searchButton">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED PROPERTIES ================= -->
+        <section class="section properties-section" id="properties">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">OUR PROPERTIES</span>
+
+                <h2>
+                    Discover Your
+                    <span>Perfect Land</span>
+                </h2>
+
+                <p>
+                    Explore carefully selected properties suitable for
+                    your home, investment or agricultural dreams.
+                </p>
+
+            </div>
+
+
+            <div class="property-grid" id="propertyGrid">
+
+                <!-- PROPERTY 1 -->
+                <article
+                    class="property-card reveal"
+                    data-location="Dindigul"
+                    data-type="Residential"
+                    data-budget="medium"
+                >
+
+                    <div class="property-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+                            alt="Residential land"
+                        >
+
+                        <span class="property-tag">FEATURED</span>
+
+                        <button class="heart-btn" aria-label="Favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="property-content">
+
+                        <div class="property-location">
+                            📍 Dindigul, Tamil Nadu
+                        </div>
+
+                        <h3>Green Valley Residential Plot</h3>
+
+                        <div class="property-details">
+                            <span>📐 2400 sq.ft</span>
+                            <span>🛣️ Road Access</span>
+                        </div>
+
+                        <div class="property-bottom">
+
+                            <strong>₹32 Lakhs</strong>
+
+                            <button
+                                class="view-property"
+                                data-property="green-valley"
+                            >
+                                View Details →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 2 -->
+                <article
+                    class="property-card reveal"
+                    data-location="Madurai"
+                    data-type="Farm Land"
+                    data-budget="low"
+                >
+
+                    <div class="property-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80"
+                            alt="Farm land"
+                        >
+
+                        <span class="property-tag farm-tag">FARM LAND</span>
+
+                        <button class="heart-btn" aria-label="Favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="property-content">
+
+                        <div class="property-location">
+                            📍 Madurai, Tamil Nadu
+                        </div>
+
+                        <h3>Nature's Green Farm Land</h3>
+
+                        <div class="property-details">
+                            <span>📐 1.5 Acres</span>
+                            <span>💧 Water Source</span>
+                        </div>
+
+                        <div class="property-bottom">
+
+                            <strong>₹22 Lakhs</strong>
+
+                            <button
+                                class="view-property"
+                                data-property="nature-farm"
+                            >
+                                View Details →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 3 -->
+                <article
+                    class="property-card reveal"
+                    data-location="Coimbatore"
+                    data-type="Premium"
+                    data-budget="high"
+                >
+
+                    <div class="property-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80"
+                            alt="Premium property"
+                        >
+
+                        <span class="property-tag premium-tag">PREMIUM</span>
+
+                        <button class="heart-btn" aria-label="Favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="property-content">
+
+                        <div class="property-location">
+                            📍 Coimbatore, Tamil Nadu
+                        </div>
+
+                        <h3>Golden Grove Premium Estate</h3>
+
+                        <div class="property-details">
+                            <span>📐 4800 sq.ft</span>
+                            <span>✨ Premium Area</span>
+                        </div>
+
+                        <div class="property-bottom">
+
+                            <strong>₹68 Lakhs</strong>
+
+                            <button
+                                class="view-property"
+                                data-property="golden-grove"
+                            >
+                                View Details →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 4 -->
+                <article
+                    class="property-card reveal"
+                    data-location="Trichy"
+                    data-type="Residential"
+                    data-budget="low"
+                >
+
+                    <div class="property-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+                            alt="Residential plot"
+                        >
+
+                        <span class="property-tag">NEW</span>
+
+                        <button class="heart-btn" aria-label="Favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="property-content">
+
+                        <div class="property-location">
+                            📍 Trichy, Tamil Nadu
+                        </div>
+
+                        <h3>Sunrise Garden Plots</h3>
+
+                        <div class="property-details">
+                            <span>📐 1800 sq.ft</span>
+                            <span>🛣️ 30ft Road</span>
+                        </div>
+
+                        <div class="property-bottom">
+
+                            <strong>₹19 Lakhs</strong>
+
+                            <button
+                                class="view-property"
+                                data-property="sunrise-garden"
+                            >
+                                View Details →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="center-button reveal">
+                <button class="btn btn-dark" id="loadMore">
+                    View More Properties →
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY CHOOSE US ================= -->
+        <section class="section why-section" id="about">
+
+            <div class="why-image reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1100&q=85"
+                    alt="Land and nature"
+                >
+
+                <div class="experience-card">
+                    <strong>10+</strong>
+                    <span>Years of<br>Experience</span>
+                </div>
+
+            </div>
+
+
+            <div class="why-content reveal">
+
+                <span class="section-label">WHY LANDORA?</span>
+
+                <h2>
+                    More Than Land,
+                    <span>It's Your Future.</span>
+                </h2>
+
+                <p>
+                    We help people discover land that matches their
+                    dreams, lifestyle and future plans.
+                </p>
+
+                <div class="benefit-list">
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <div>
+                            <strong>Verified Properties</strong>
+                            <p>We focus on properties with clear and reliable information.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <div>
+                            <strong>Prime Locations</strong>
+                            <p>Properties selected in developing and desirable locations.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <div>
+                            <strong>Transparent Guidance</strong>
+                            <p>Simple and clear assistance throughout your property journey.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit">
+                        <span>✓</span>
+                        <div>
+                            <strong>Customer Support</strong>
+                            <p>Our team is available to help you with your enquiries.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESIDENTIAL ================= -->
+        <section class="section category-section" id="residential">
+
+            <div class="category-content reveal">
+
+                <span class="section-label">RESIDENTIAL PLOTS</span>
+
+                <h2>
+                    Build Your
+                    <span>Dream Home</span>
+                </h2>
+
+                <p>
+                    Find residential plots in peaceful and developing
+                    locations, ready for your future home.
+                </p>
+
+                <a href="#properties" class="btn btn-primary">
+                    Explore Residential Plots →
+                </a>
+
+            </div>
+
+            <div class="category-image reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+                    alt="Beautiful modern house"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FARM LAND ================= -->
+        <section class="section category-section reverse" id="farmland">
+
+            <div class="category-image reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=85"
+                    alt="Green farm land"
+                >
+
+            </div>
+
+            <div class="category-content reveal">
+
+                <span class="section-label">FARM LANDS</span>
+
+                <h2>
+                    Grow With
+                    <span>Nature</span>
+                </h2>
+
+                <p>
+                    Discover peaceful agricultural properties surrounded
+                    by greenery and natural beauty.
+                </p>
+
+                <a href="#properties" class="btn btn-primary">
+                    Explore Farm Lands →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PREMIUM ================= -->
+        <section class="premium-section" id="premium">
+
+            <div class="premium-overlay"></div>
+
+            <div class="premium-content reveal">
+
+                <span class="section-label light">
+                    PREMIUM COLLECTION
+                </span>
+
+                <h2>
+                    A Property
+                    <span>Beyond Ordinary.</span>
+                </h2>
+
+                <p>
+                    Exclusive properties selected for those looking
+                    for something truly special.
+                </p>
+
+                <a href="#contact" class="btn btn-gold">
+                    Enquire About Premium Lands →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOCATIONS ================= -->
+        <section class="section locations-section" id="locations">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">POPULAR LOCATIONS</span>
+
+                <h2>
+                    Find Land In
+                    <span>Growing Locations</span>
+                </h2>
+
+                <p>
+                    Explore properties across carefully selected locations.
+                </p>
+
+            </div>
+
+
+            <div class="locations-grid">
+
+                <div class="location-card large reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Dindigul"
+                    >
+
+                    <div class="location-overlay">
+                        <span>12 Properties</span>
+                        <h3>Dindigul</h3>
+                        <p>Tamil Nadu</p>
+                    </div>
+
+                </div>
+
+
+                <div class="location-card reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=85"
+                        alt="Coimbatore"
+                    >
+
+                    <div class="location-overlay">
+                        <span>18 Properties</span>
+                        <h3>Coimbatore</h3>
+                        <p>Tamil Nadu</p>
+                    </div>
+
+                </div>
+
+
+                <div class="location-card reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=85"
+                        alt="Madurai"
+                    >
+
+                    <div class="location-overlay">
+                        <span>15 Properties</span>
+                        <h3>Madurai</h3>
+                        <p>Tamil Nadu</p>
+                    </div>
+
+                </div>
+
+
+                <div class="location-card reveal">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=85"
+                        alt="Trichy"
+                    >
+
+                    <div class="location-overlay">
+                        <span>10 Properties</span>
+                        <h3>Trichy</h3>
+                        <p>Tamil Nadu</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROCESS ================= -->
+        <section class="section process-section" id="process">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">SIMPLE PROCESS</span>
+
+                <h2>
+                    Your Land Journey,
+                    <span>Made Simple.</span>
+                </h2>
+
+                <p>
+                    From discovering a property to making it yours,
+                    we keep the process simple.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <div class="process-card reveal">
+
+                    <div class="process-number">01</div>
+
+                    <div class="process-icon">🔎</div>
+
+                    <h3>Explore</h3>
+
+                    <p>
+                        Browse properties based on your location,
+                        needs and budget.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card reveal">
+
+                    <div class="process-number">02</div>
+
+                    <div class="process-icon">📍</div>
+
+                    <h3>Visit</h3>
+
+                    <p>
+                        Schedule a visit and experience the property
+                        and surrounding location.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card reveal">
+
+                    <div class="process-number">03</div>
+
+                    <div class="process-icon">📄</div>
+
+                    <h3>Verify</h3>
+
+                    <p>
+                        Review property information and documentation
+                        with proper guidance.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card reveal">
+
+                    <div class="process-number">04</div>
+
+                    <div class="process-icon">🏡</div>
+
+                    <h3>Own</h3>
+
+                    <p>
+                        Move forward with your property journey
+                        confidently.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GALLERY ================= -->
+        <section class="section gallery-section" id="gallery">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">PROPERTY GALLERY</span>
+
+                <h2>
+                    See The Possibilities
+                    <span>For Yourself.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-large reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85"
+                        alt="Land"
+                    >
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=85"
+                        alt="Farm"
+                    >
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=85"
+                        alt="House"
+                    >
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=85"
+                        alt="Nature"
+                    >
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=85"
+                        alt="Forest"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+        <section class="stats-section">
+
+            <div class="stat-box reveal">
+                <strong class="counter" data-target="500">0</strong>
+                <span>Properties</span>
+            </div>
+
+            <div class="stat-box reveal">
+                <strong class="counter" data-target="20">0</strong>
+                <span>Locations</span>
+            </div>
+
+            <div class="stat-box reveal">
+                <strong class="counter" data-target="1000">0</strong>
+                <span>Happy Clients</span>
+            </div>
+
+            <div class="stat-box reveal">
+                <strong class="counter" data-target="10">0</strong>
+                <span>Years Experience</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= REVIEWS ================= -->
+        <section class="section reviews-section" id="reviews">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">CLIENT STORIES</span>
+
+                <h2>
+                    What Our Clients
+                    <span>Say</span>
+                </h2>
+
+                <p>
+                    Experiences from people who started their property journey with us.
+                </p>
+
+            </div>
+
+
+            <div class="reviews-grid">
+
+                <article class="review-card reveal">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        “The team helped us find a beautiful plot
+                        in a location that was perfect for our family.
+                        The whole experience was simple.”
+                    </p>
+
+                    <div class="review-user">
+                        <div class="avatar">RK</div>
+                        <div>
+                            <strong>Ravi Kumar</strong>
+                            <span>Home Buyer</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="review-card reveal">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        “I was looking for farm land and found several
+                        options through LANDORA. Their support made
+                        the process much easier.”
+                    </p>
+
+                    <div class="review-user">
+                        <div class="avatar">AS</div>
+                        <div>
+                            <strong>Anitha S</strong>
+                            <span>Land Investor</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="review-card reveal">
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>
+                        “Very professional experience. I liked the way
+                        the properties were presented and the guidance
+                        provided by the team.”
+                    </p>
+
+                    <div class="review-user">
+                        <div class="avatar">VP</div>
+                        <div>
+                            <strong>Vijay P</strong>
+                            <span>Property Buyer</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+        <section class="final-cta">
+
+            <div class="cta-decoration"></div>
+
+            <div class="cta-content reveal">
+
+                <span class="section-label light">
+                    YOUR FUTURE STARTS HERE
+                </span>
+
+                <h2>
+                    Your Dream Land
+                    <span>Is Waiting.</span>
+                </h2>
+
+                <p>
+                    Tell us what you're looking for and
+                    we'll help you explore the possibilities.
+                </p>
+
+                <a href="#contact" class="btn btn-gold">
+                    Start Your Property Journey →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-info reveal">
+
+                <span class="section-label">GET IN TOUCH</span>
+
+                <h2>
+                    Let's Find Your
+                    <span>Perfect Land.</span>
+                </h2>
+
+                <p>
+                    Have a property in mind? Send us your requirements
+                    and our team will get back to you.
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Our Office</strong>
+                            <p>Dindigul, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Call Us</strong>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@landora.in</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form reveal" id="contactForm">
+
+                <div class="form-heading">
+                    <h3>Property Enquiry</h3>
+                    <p>Tell us what you're looking for.</p>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Property Type</label>
+
+                        <select id="propertyType" required>
+
+                            <option value="">Select type</option>
+                            <option>Residential Plot</option>
+                            <option>Farm Land</option>
+                            <option>Premium Property</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Preferred Location</label>
+
+                        <select id="preferredLocation" required>
+
+                            <option value="">Select location</option>
+                            <option>Dindigul</option>
+                            <option>Madurai</option>
+                            <option>Coimbatore</option>
+                            <option>Trichy</option>
+                            <option>Chennai</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Your Message</label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Tell us about your requirements..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-primary form-submit">
+                    Send Enquiry →
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    <span class="logo-mark">L</span>
+
+                    <div>
+                        <strong>LANDORA</strong>
+                        <small>PROPERTIES</small>
+                    </div>
+                </div>
+
+                <p>
+                    Helping you discover land,
+                    build dreams and create your future.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="#properties">Properties</a>
+                <a href="#residential">Residential Plots</a>
+                <a href="#farmland">Farm Lands</a>
+                <a href="#premium">Premium Lands</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <a href="#about">About Us</a>
+                <a href="#locations">Locations</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <a href="#contact">Contact Us</a>
+                <a href="#contact">Property Enquiry</a>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:hello@landora.in">hello@landora.in</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span> LANDORA Properties.
+                All rights reserved.
+            </p>
+
+            <p>
+                Designed with passion ✦
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= PROPERTY MODAL ================= -->
+    <div class="property-modal" id="propertyModal">
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div class="modal-box">
+
+            <button class="modal-close" id="modalClose">
+                &times;
+            </button>
+
+            <div class="modal-image">
+
+                <img
+                    id="modalImage"
+                    src=""
+                    alt="Property"
+                >
+
+            </div>
+
+            <div class="modal-content">
+
+                <span id="modalTag" class="section-label">
+                    PROPERTY
+                </span>
+
+                <h2 id="modalTitle">
+                    Property Title
+                </h2>
+
+                <p id="modalLocation">
+                    📍 Location
+                </p>
+
+                <div class="modal-details">
+
+                    <div>
+                        <span>Land Size</span>
+                        <strong id="modalSize">--</strong>
+                    </div>
+
+                    <div>
+                        <span>Price</span>
+                        <strong id="modalPrice">--</strong>
+                    </div>
+
+                    <div>
+                        <span>Road</span>
+                        <strong id="modalRoad">--</strong>
+                    </div>
+
+                </div>
+
+                <p id="modalDescription">
+                    Property description.
+                </p>
+
+                <a href="#contact" class="btn btn-primary modal-enquiry">
+                    Enquire About This Property →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= GALLERY LIGHTBOX ================= -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="lightbox-close" id="lightboxClose">
+            &times;
+        </button>
+
+        <button class="lightbox-prev" id="lightboxPrev">
+            ‹
+        </button>
+
+        <img id="lightboxImage" src="" alt="Gallery Image">
+
+        <button class="lightbox-next" id="lightboxNext">
+            ›
+        </button>
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+    <div class="toast" id="toast">
+
+        <div class="toast-icon">✓</div>
+
+        <div>
+            <strong id="toastTitle">Success</strong>
+            <p id="toastMessage">Thank you!</p>
+        </div>
+
+    </div>
+
+
+    <!-- ================= SCROLL TOP ================= -->
+    <button class="scroll-top" id="scrollTop">
+        ↑
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
